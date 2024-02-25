@@ -61,6 +61,8 @@ data:extend({
 			mining_time = 0.5,  -- Making mining faster
 			result = "limestone",
 		},
+		collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
+		selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
 		autoplace = {
 			control = "limestone-deposit",
 			sharpness = 1,
@@ -160,7 +162,7 @@ data:extend({
 			coverage = 0.002,
 			peaks = {
 				{
-					noise_layer = "clay",
+					noise_layer = "clayf",
 					noise_octaves_difference = -1.5,
 					noise_persistence = 0.3,
 				},
