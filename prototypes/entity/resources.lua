@@ -162,7 +162,7 @@ data:extend({
 			coverage = 0.002,
 			peaks = {
 				{
-					noise_layer = "clayf",
+					noise_layer = "clay",
 					noise_octaves_difference = -1.5,
 					noise_persistence = 0.3,
 				},
