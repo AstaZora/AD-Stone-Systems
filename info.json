@@ -1,0 +1,16 @@
+{
+    "name": "AD-Stone-Systems",
+    "version": "0.0.01",
+    "factorio_version": "1.1",
+    "date": "2024-02-08",
+    "title": "Stoneworks: Aquaculture and Hydroponics Integration",
+    "author": "AstaZora",
+    "homepage": "",
+    "description": "An optional mod to enhance Hydroponics and Aquaculture integration with the Stoneworks mod. Adds Gypsum and Limestone processing for some semi-realism",
+    "dependencies": [
+        "base >= 1.0.0",
+        "AB-Breathe-Easy-Arboretum >= 0.0.1",
+        "AC-Aquaculture >= 0.0.1"
+      ]
+      
+}
