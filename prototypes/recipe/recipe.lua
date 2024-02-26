@@ -1,0 +1,202 @@
+data:extend({
+    {
+        type = "recipe",
+        name = "ad-raw-gypsum",
+        category = "ab-crushing",
+        subgroup = "ad-raw-materials",
+        energy_required = 4,
+        enabled = false,
+        ingredients = {
+        {"gypsum", 3}
+        },
+        results = {
+        {"raw-gypsum", 2}
+        }
+    },
+    {
+        type = "recipe",
+        name = "ad-gypsum-crushing",
+        category = "ab-crushing",  -- This could be a new or existing category depending on your mod setup
+        subgroup = "ad-raw-materials",
+        energy_required = 2,
+        enabled = false,
+        ingredients = {{"raw-gypsum", 2}},
+        result = "gypsum-powder",
+        result_count = 2,
+    },
+    {
+        type = "recipe",
+        name = "ad-gypsum-powder-processing",
+        category = "chemistry",  -- Assuming you have advanced machines
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {
+            {type = "item", name = "gypsum-powder", amount = 5},
+            {type = "fluid", name = "water", amount = 35}
+        },
+        results = {{"plaster", 3}},
+    },
+    {
+        type = "recipe",
+        name = "ad-high-quality-fertilizer",
+        category = "chemistry",  -- This assumes you have a chemistry lab or similar
+        subgroup = "ad-raw-materials",
+        energy_required = 10,
+        enabled = false,
+        ingredients = {
+            {"enhanced-soil", 2},
+            {"limestone", 2},
+            {"organic-mulch", 5},  -- Assuming organic matter is a product from AB
+        },
+        result = "high-quality-fertilizer",
+        result_count = 5,
+    },
+    {
+        type = "recipe",
+        name = "ad-gypsum-soil-amendment",
+        category = "agriculture",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {
+            {type = "item", name = "gypsum-powder", amount = 3},
+            {type = "fluid", name = "water", amount = 20},
+            {type = "item", name = "gravel", amount = 5},
+            {type = "item", name = "clay", amount = 2}
+        },
+        results = {{"enhanced-soil", 2}},
+    },
+    {
+        type = "recipe",
+        name = "ad-hydrolic-lime",
+        category = "chemistry",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {{"plaster", 5}, {"slaked-lime", 5}, {"precipitated-calcium-carbonate", 5}},
+        results = {{"hydrolic-lime", 5}},
+    },
+    {
+        type = "recipe",
+        name = "ad-quicklime",
+        category = "chemistry",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {{"limestone", 5}},
+        results = {{"quicklime", 5}},
+    },
+    {
+        type = "recipe",
+        name = "ad-slaked-lime",
+        category = "chemistry",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {
+            {type = "item", name = "quicklime", amount = 5},
+            {type = "fluid", name = "water", amount = 30}
+        },
+        results = {{"slaked-lime", 5}},
+    },
+    {
+        type = "recipe",
+        name = "ad-crushed-limestone",
+        category = "ab-crushing",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {{"limestone", 5}},
+        results = {{"crushed-limestone", 5}},
+    },
+    {
+        type = "recipe",
+        name = "ad-precipitated-calcium-carbonate",
+        category = "chemistry",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {
+            {type = "item", name = "quicklime", amount = 5},
+            {type = "fluid", name = "water", amount = 5}
+        },
+        results = {{"precipitated-calcium-carbonate", 5}},
+    },
+    {
+        type = "recipe",
+        name = "ad-cement",
+        category = "chemistry",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {{"quicklime", 5}, {"precipitated-calcium-carbonate", 5}, {"clay", 5}},
+        results = {{"cement", 5}},
+    },
+    {
+        type = "recipe",
+        name = "ad-concrete",
+        category = "chemistry",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {
+            {type = "item", name = "cement", amount = 5},
+            {type = "item", name = "gravel", amount = 5},
+            {type = "fluid", name = "water", amount = 25}
+        },
+        results = {{"concrete", 1}},
+    },
+    {
+        type = "recipe",
+        name = "ad-glass-mixture",
+        category = "chemistry",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {{"sand", 5}, {"wood-ash", 5}, {"limestone", 5}},
+        results = {{"glass-mixture", 5}},
+    },
+    {
+        type = "recipe",
+        name = "ad-lime-mortar",
+        category = "chemistry",
+        subgroup = "ad-raw-materials",
+        energy_required = 3,
+        enabled = false,
+        ingredients = {{"slaked-lime", 2}, {"sand", 1}},
+        results = {{"lime-mortar", 3}},
+    },
+    {
+        type = "recipe",
+        name = "ad-concrete-blocks",
+        category = "crafting",
+        subgroup = "ad-raw-materials",
+        energy_required = 2,
+        enabled = false,
+        ingredients = {{"concrete", 2}, {"gravel", 1}},
+        results = {{"concrete-blocks", 2}},
+    },
+    {
+        type = "recipe",
+        name = "ad-bricks",
+        category = "smelting",
+        subgroup = "ad-raw-materials",
+        energy_required = 3.5,
+        enabled = false,
+        ingredients = {{"clay", 4}},
+        result = "bricks",
+        result_count = 2,
+    },
+    {
+        type = "recipe",
+        name = "ad-glass-panes",
+        category = "smelting",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = false,
+        ingredients = {{"glass-mixture", 3}},
+        result = "glass-panes",
+        result_count = 3,
+    },
+})
