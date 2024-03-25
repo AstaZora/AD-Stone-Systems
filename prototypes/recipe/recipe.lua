@@ -199,4 +199,15 @@ data:extend({
         result = "glass-panes",
         result_count = 3,
     },
+    {
+        type = "recipe",
+        name = "ad-pure-stone",
+        category = "smelting",
+        subgroup = "ad-raw-materials",
+        energy_required = 5,
+        enabled = true,
+        ingredients = {{"blended-stone", 1}},
+        result = "stone-brick",
+        result_count = 2,
+    },
 })
